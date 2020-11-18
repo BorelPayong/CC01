@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmEtudiant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmEtudiant.Designer.cs">
+      <DependentUpon>FrmEtudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEcoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEcoles.Designer.cs">
+      <DependentUpon>FrmEcoles.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmEcoles.resx">
+      <DependentUpon>FrmEcoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEtudiant.resx">
+      <DependentUpon>FrmEtudiant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
