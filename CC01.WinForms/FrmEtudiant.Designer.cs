@@ -51,6 +51,10 @@
             this.textBoxNomEcole = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +63,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 301);
+            this.label7.Location = new System.Drawing.Point(12, 362);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 20);
             this.label7.TabIndex = 33;
@@ -68,7 +72,7 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(165, 298);
+            this.textBoxEmail.Location = new System.Drawing.Point(165, 359);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(179, 26);
             this.textBoxEmail.TabIndex = 32;
@@ -77,7 +81,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 251);
+            this.label6.Location = new System.Drawing.Point(12, 313);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 31;
@@ -86,7 +90,7 @@
             // textBoxContact
             // 
             this.textBoxContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContact.Location = new System.Drawing.Point(165, 245);
+            this.textBoxContact.Location = new System.Drawing.Point(165, 307);
             this.textBoxContact.Name = "textBoxContact";
             this.textBoxContact.Size = new System.Drawing.Size(179, 26);
             this.textBoxContact.TabIndex = 30;
@@ -95,7 +99,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 190);
+            this.label5.Location = new System.Drawing.Point(12, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 29;
@@ -104,7 +108,7 @@
             // textBoxId
             // 
             this.textBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxId.Location = new System.Drawing.Point(165, 184);
+            this.textBoxId.Location = new System.Drawing.Point(165, 253);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(179, 26);
             this.textBoxId.TabIndex = 28;
@@ -113,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 146);
+            this.label4.Location = new System.Drawing.Point(12, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 20);
             this.label4.TabIndex = 27;
@@ -122,7 +126,7 @@
             // textBoxA
             // 
             this.textBoxA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxA.Location = new System.Drawing.Point(165, 140);
+            this.textBoxA.Location = new System.Drawing.Point(165, 198);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(179, 26);
             this.textBoxA.TabIndex = 26;
@@ -131,7 +135,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 111);
+            this.label3.Location = new System.Drawing.Point(12, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 20);
             this.label3.TabIndex = 25;
@@ -141,7 +145,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 67);
+            this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 20;
@@ -150,7 +154,7 @@
             // textBoxfirstname
             // 
             this.textBoxfirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxfirstname.Location = new System.Drawing.Point(165, 64);
+            this.textBoxfirstname.Location = new System.Drawing.Point(165, 93);
             this.textBoxfirstname.Name = "textBoxfirstname";
             this.textBoxfirstname.Size = new System.Drawing.Size(179, 26);
             this.textBoxfirstname.TabIndex = 19;
@@ -159,7 +163,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Location = new System.Drawing.Point(12, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 18;
@@ -168,7 +172,7 @@
             // textBoxlastname
             // 
             this.textBoxlastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxlastname.Location = new System.Drawing.Point(165, 17);
+            this.textBoxlastname.Location = new System.Drawing.Point(165, 40);
             this.textBoxlastname.Name = "textBoxlastname";
             this.textBoxlastname.Size = new System.Drawing.Size(179, 26);
             this.textBoxlastname.TabIndex = 17;
@@ -183,7 +187,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(16, 417);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 465);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 114);
             this.pictureBox1.TabIndex = 35;
@@ -209,7 +213,7 @@
             // 
             // buttonSauvegarder
             // 
-            this.buttonSauvegarder.Location = new System.Drawing.Point(225, 417);
+            this.buttonSauvegarder.Location = new System.Drawing.Point(225, 465);
             this.buttonSauvegarder.Name = "buttonSauvegarder";
             this.buttonSauvegarder.Size = new System.Drawing.Size(119, 45);
             this.buttonSauvegarder.TabIndex = 39;
@@ -219,7 +223,7 @@
             // buttonAnnuler
             // 
             this.buttonAnnuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonAnnuler.Location = new System.Drawing.Point(225, 486);
+            this.buttonAnnuler.Location = new System.Drawing.Point(225, 534);
             this.buttonAnnuler.Name = "buttonAnnuler";
             this.buttonAnnuler.Size = new System.Drawing.Size(119, 45);
             this.buttonAnnuler.TabIndex = 40;
@@ -230,7 +234,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 351);
+            this.label9.Location = new System.Drawing.Point(12, 410);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 20);
             this.label9.TabIndex = 42;
@@ -239,7 +243,7 @@
             // textBoxNomEcole
             // 
             this.textBoxNomEcole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomEcole.Location = new System.Drawing.Point(165, 348);
+            this.textBoxNomEcole.Location = new System.Drawing.Point(165, 407);
             this.textBoxNomEcole.Name = "textBoxNomEcole";
             this.textBoxNomEcole.Size = new System.Drawing.Size(179, 26);
             this.textBoxNomEcole.TabIndex = 41;
@@ -248,7 +252,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 401);
+            this.label10.Location = new System.Drawing.Point(22, 449);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 13);
             this.label10.TabIndex = 43;
@@ -256,10 +260,53 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(165, 110);
+            this.dateTimePicker1.Location = new System.Drawing.Point(165, 149);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(179, 20);
             this.dateTimePicker1.TabIndex = 44;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(994, 537);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(160, 42);
+            this.btnCancel.TabIndex = 52;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDelete.Location = new System.Drawing.Point(828, 537);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(160, 42);
+            this.btnDelete.TabIndex = 51;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnRefresh.Location = new System.Drawing.Point(541, 537);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(160, 42);
+            this.btnRefresh.TabIndex = 50;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(375, 537);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(160, 42);
+            this.btnPrint.TabIndex = 49;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // FrmEtudiant
             // 
@@ -267,7 +314,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonAnnuler;
-            this.ClientSize = new System.Drawing.Size(1169, 543);
+            this.ClientSize = new System.Drawing.Size(1169, 590);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -325,6 +376,10 @@
         private System.Windows.Forms.TextBox textBoxNomEcole;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
 
