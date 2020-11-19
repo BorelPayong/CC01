@@ -19,16 +19,16 @@ namespace CC01.WinForms
 
         private void buttonEtudiants_Click(object sender, EventArgs e)
         {
-            Form E = new FrmEtudiant();
-            E.Show();
-            this.Close();
+            Form Et = new FrmEtudiant();
+            Et.Show();
+            this.Hide();
         }
 
         private void buttonEcoles_Click(object sender, EventArgs e)
         {
-            Form E = new FrmEcoles();
-            E.Show();
-            this.Close();
+            Form Ec = new FrmEcoles();
+            Ec.Show();
+            this.Hide();
         }
     }
 }
