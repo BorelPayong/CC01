@@ -40,6 +40,9 @@
             this.textBoxVille = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxQuartier = new System.Windows.Forms.TextBox();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.buttonSauvegarder = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +67,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(787, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(787, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 106);
             this.pictureBox1.TabIndex = 2;
@@ -73,7 +76,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 245);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(891, 264);
             this.dataGridView1.TabIndex = 3;
@@ -100,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 126);
+            this.label3.Location = new System.Drawing.Point(12, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 7;
@@ -109,7 +112,7 @@
             // textBoxRecherche
             // 
             this.textBoxRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRecherche.Location = new System.Drawing.Point(16, 149);
+            this.textBoxRecherche.Location = new System.Drawing.Point(16, 199);
             this.textBoxRecherche.Name = "textBoxRecherche";
             this.textBoxRecherche.Size = new System.Drawing.Size(723, 26);
             this.textBoxRecherche.TabIndex = 6;
@@ -150,11 +153,43 @@
             this.textBoxQuartier.Size = new System.Drawing.Size(380, 26);
             this.textBoxQuartier.TabIndex = 10;
             // 
+            // buttonAnnuler
+            // 
+            this.buttonAnnuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonAnnuler.Location = new System.Drawing.Point(620, 128);
+            this.buttonAnnuler.Name = "buttonAnnuler";
+            this.buttonAnnuler.Size = new System.Drawing.Size(119, 31);
+            this.buttonAnnuler.TabIndex = 42;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // buttonSauvegarder
+            // 
+            this.buttonSauvegarder.Location = new System.Drawing.Point(16, 128);
+            this.buttonSauvegarder.Name = "buttonSauvegarder";
+            this.buttonSauvegarder.Size = new System.Drawing.Size(119, 31);
+            this.buttonSauvegarder.TabIndex = 41;
+            this.buttonSauvegarder.Text = "Sauvegarder";
+            this.buttonSauvegarder.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(784, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Logo";
+            // 
             // FrmEcoles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 466);
+            this.ClientSize = new System.Drawing.Size(919, 521);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.buttonAnnuler);
+            this.Controls.Add(this.buttonSauvegarder);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxQuartier);
             this.Controls.Add(this.label4);
@@ -190,5 +225,8 @@
         private System.Windows.Forms.TextBox textBoxVille;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxQuartier;
+        private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.Button buttonSauvegarder;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -37,7 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxBorn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxfirstname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,8 +45,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonSauvegarder = new System.Windows.Forms.Button();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxNomEcole = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -134,14 +137,6 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Né(e) le/Born on:";
             // 
-            // textBoxBorn
-            // 
-            this.textBoxBorn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBorn.Location = new System.Drawing.Point(165, 105);
-            this.textBoxBorn.Name = "textBoxBorn";
-            this.textBoxBorn.Size = new System.Drawing.Size(179, 26);
-            this.textBoxBorn.TabIndex = 24;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -181,14 +176,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(375, 83);
+            this.dataGridView1.Location = new System.Drawing.Point(375, 72);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(779, 372);
+            this.dataGridView1.Size = new System.Drawing.Size(779, 459);
             this.dataGridView1.TabIndex = 34;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(16, 341);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 417);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 114);
             this.pictureBox1.TabIndex = 35;
@@ -212,31 +207,73 @@
             this.textBoxSearch.Size = new System.Drawing.Size(779, 26);
             this.textBoxSearch.TabIndex = 36;
             // 
-            // button2
+            // buttonSauvegarder
             // 
-            this.button2.Location = new System.Drawing.Point(225, 341);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 45);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonSauvegarder.Location = new System.Drawing.Point(225, 417);
+            this.buttonSauvegarder.Name = "buttonSauvegarder";
+            this.buttonSauvegarder.Size = new System.Drawing.Size(119, 45);
+            this.buttonSauvegarder.TabIndex = 39;
+            this.buttonSauvegarder.Text = "Sauvegarder";
+            this.buttonSauvegarder.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonAnnuler
             // 
-            this.button3.Location = new System.Drawing.Point(225, 410);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 45);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonAnnuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonAnnuler.Location = new System.Drawing.Point(225, 486);
+            this.buttonAnnuler.Name = "buttonAnnuler";
+            this.buttonAnnuler.Size = new System.Drawing.Size(119, 45);
+            this.buttonAnnuler.TabIndex = 40;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 351);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 20);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "Nom Ecole";
+            // 
+            // textBoxNomEcole
+            // 
+            this.textBoxNomEcole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNomEcole.Location = new System.Drawing.Point(165, 348);
+            this.textBoxNomEcole.Name = "textBoxNomEcole";
+            this.textBoxNomEcole.Size = new System.Drawing.Size(179, 26);
+            this.textBoxNomEcole.TabIndex = 41;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 401);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.TabIndex = 43;
+            this.label10.Text = "Photo";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(165, 110);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(179, 20);
+            this.dateTimePicker1.TabIndex = 44;
             // 
             // FrmEtudiant
             // 
+            this.AcceptButton = this.buttonSauvegarder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1169, 467);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.CancelButton = this.buttonAnnuler;
+            this.ClientSize = new System.Drawing.Size(1169, 543);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBoxNomEcole);
+            this.Controls.Add(this.buttonAnnuler);
+            this.Controls.Add(this.buttonSauvegarder);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.pictureBox1);
@@ -250,7 +287,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxA);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxBorn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxfirstname);
             this.Controls.Add(this.label1);
@@ -275,7 +311,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxBorn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxfirstname;
         private System.Windows.Forms.Label label1;
@@ -284,8 +319,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonSauvegarder;
+        private System.Windows.Forms.Button buttonAnnuler;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxNomEcole;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
