@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxNee = new System.Windows.Forms.TextBox();
+            this.textBoxBorn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxfirstname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -132,13 +132,13 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Né(e) le/Born on:";
             // 
-            // textBoxNee
+            // textBoxBorn
             // 
-            this.textBoxNee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNee.Location = new System.Drawing.Point(165, 105);
-            this.textBoxNee.Name = "textBoxNee";
-            this.textBoxNee.Size = new System.Drawing.Size(179, 26);
-            this.textBoxNee.TabIndex = 24;
+            this.textBoxBorn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBorn.Location = new System.Drawing.Point(165, 105);
+            this.textBoxBorn.Name = "textBoxBorn";
+            this.textBoxBorn.Size = new System.Drawing.Size(179, 26);
+            this.textBoxBorn.TabIndex = 24;
             // 
             // label2
             // 
@@ -228,7 +228,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxA);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxNee);
+            this.Controls.Add(this.textBoxBorn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxfirstname);
             this.Controls.Add(this.label1);
@@ -253,7 +253,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxNee;
+        private System.Windows.Forms.TextBox textBoxBorn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxfirstname;
         private System.Windows.Forms.Label label1;
