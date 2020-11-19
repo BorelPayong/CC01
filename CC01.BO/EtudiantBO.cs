@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CC01.BO
 {
     [Serializable]
-    public class Etudiant
+    public class EtudiantBO
     {
         public string Lastname { get; set; }
         public string Firstname { get; set; }
@@ -18,12 +18,12 @@ namespace CC01.BO
         public string Email { get; set; }
         public byte[] Picture { get; set; }
 
-        public Etudiant() // Pour la serialisation
+        public EtudiantBO() // Pour la serialisation
         {
               
         }
 
-        public Etudiant(string lastname, string firstname, string born, string lieu, int identifiant, double contact, string email, byte[] picture)
+        public EtudiantBO(string lastname, string firstname, string born, string lieu, int identifiant, double contact, string email, byte[] picture)
         {
             Lastname = lastname;
             Firstname = firstname;
@@ -37,7 +37,7 @@ namespace CC01.BO
 
         public override bool Equals(object obj)
         {
-            return obj is Etudiant etudiant &&
+            return obj is EtudiantBO etudiant &&
                    Identifiant == etudiant.Identifiant;
         }
 
