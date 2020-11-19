@@ -23,5 +23,21 @@ namespace CC01.WinForms
             E.Show();
             this.Close();
         }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            textBoxA.Clear();
+            textBoxContact.Clear();
+            textBoxEmail.Clear();
+            textBoxfirstname.Clear();
+            textBoxId.Clear();
+            textBoxlastname.Clear();
+            textBoxNomEcole.Clear();
+        }
+
+        private void textBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
