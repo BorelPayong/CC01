@@ -16,5 +16,12 @@ namespace CC01.WinForms
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form E = new FrmParent();
+            E.Show();
+            this.Close();
+        }
     }
 }

@@ -42,6 +42,7 @@
             this.buttonEtudiants.TabIndex = 0;
             this.buttonEtudiants.Text = "Etudiants";
             this.buttonEtudiants.UseVisualStyleBackColor = true;
+            this.buttonEtudiants.Click += new System.EventHandler(this.buttonEtudiants_Click);
             // 
             // label1
             // 
@@ -61,6 +62,7 @@
             this.buttonEcoles.TabIndex = 2;
             this.buttonEcoles.Text = "Ecoles";
             this.buttonEcoles.UseVisualStyleBackColor = true;
+            this.buttonEcoles.Click += new System.EventHandler(this.buttonEcoles_Click);
             // 
             // label2
             // 
