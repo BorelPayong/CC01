@@ -33,9 +33,15 @@ namespace CC01.WinForms
             textBoxId.Clear();
             textBoxlastname.Clear();
             textBoxNomEcole.Clear();
+            textBoxBorn.Clear();
         }
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSauvegarder_Click(object sender, EventArgs e)
         {
 
         }
