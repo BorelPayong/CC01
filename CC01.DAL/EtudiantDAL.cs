@@ -47,6 +47,19 @@ namespace CC01.DAL
             }
         }
 
+        public void Set(Etudiant oldetudiant, Etudiant newetudiant)
+        {
+            var oldIndex = etudiants.IndexOf(oldetudiant);
+            var newIndex = etudiants.IndexOf(newetudiant);
+
+            if (oldIndex < 0)
+                throw new KeyNotFoundException("cet Id existe deja !");
+            if (newIndex >= 0 && oldIndex != newIndex)
+                throw new DuplicateNameException("This product reference already exists !");
+            etudiants[oldIndex] = newetudiant;
+            Save();
+        }
+
         public void Add(Etudiant etudiant)
         {
             var index = etudiants.IndexOf(etudiant);

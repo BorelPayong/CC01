@@ -26,6 +26,24 @@ namespace CC01.WinForms
             InitializeComponent();
         }
 
+        public FrmEtudiant(Action callBack):this()
+        {
+            this.callBack = callBack;
+        }
+
+        public FrmEtudiant(Etudiant etudiant, Action callBack) : this()
+        {
+            this.oldEtudiant = etudiant;
+            textBoxfirstname.Text = etudiant.Firstname;
+            textBoxlastname.Text = etudiant.Lastname;
+            textBoxBorn.Text = etudiant.Born;
+            textBoxA.Text = etudiant.Lieu;
+            textBoxId.Text = etudiant.Identifiant;
+            textBoxContact.Text = etudiant.Contact.ToString();
+            if (etudiant.Picture != null)
+                pictureBox1.Image = Image.FromStream(new MemoryStream(etudiant.Picture));
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form E = new FrmParent();
@@ -159,6 +177,22 @@ namespace CC01.WinForms
             }
             if (!string.IsNullOrEmpty(text))
                 throw new TypingException(text);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Choose a picture";
+            ofd.Filter = "Image files|*.jpg;*.jpeg;*.png;*.gif";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.ImageLocation = ofd.FileName;
+            }
         }
     }
 }
