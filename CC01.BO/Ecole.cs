@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CC01.BO
 {
-    class EcoleBO
+    class Ecole
     {
         public string Nomecole;
 
@@ -18,7 +18,7 @@ namespace CC01.BO
 
         public string Quartier;
 
-        public EcoleBO(string nomecole, string abreviation, byte[] logo, string ville, string quartier)
+        public Ecole(string nomecole, string abreviation, byte[] logo, string ville, string quartier)
         {
             Nomecole = nomecole;
             Abreviation = abreviation;
@@ -29,7 +29,7 @@ namespace CC01.BO
 
         public override bool Equals(object obj)
         {
-            return obj is EcoleBO ecole &&
+            return obj is Ecole ecole &&
                    Abreviation == ecole.Abreviation;
         }
 

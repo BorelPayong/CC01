@@ -12,7 +12,7 @@ namespace CC01.DAL
 {
     public class EtudiantDAL
     {
-        private static List<EtudiantBO> etudiants;
+        private static List<Etudiant> etudiants;
 
         private const string FILE_NAME = @"etudiants.json";
 
@@ -38,16 +38,16 @@ namespace CC01.DAL
                 using(StreamReader sr = new StreamReader(file.FullName))
                 {
                     string json = sr.ReadToEnd();
-                    etudiants = JsonConvert.DeserializeObject<List<EtudiantBO>>(json);
+                    etudiants = JsonConvert.DeserializeObject<List<Etudiant>>(json);
                 }
             }
             if(etudiants == null)
             {
-                etudiants = new List<EtudiantBO>();
+                etudiants = new List<Etudiant>();
             }
         }
 
-        public void Add(EtudiantBO etudiant)
+        public void Add(Etudiant etudiant)
         {
             var index = etudiants.IndexOf(etudiant);
             if (index >= 0)
@@ -65,20 +65,20 @@ namespace CC01.DAL
             }
         }
 
-        public void Remove(EtudiantBO etudiant)
+        public void Remove(Etudiant etudiant)
         {
             etudiants.Remove(etudiant);
             Save();
         }
 
-        public IEnumerable<EtudiantBO> Find()
+        public IEnumerable<Etudiant> Find()
         {
-            return new List<EtudiantBO>(etudiants);
+            return new List<Etudiant>(etudiants);
         }
 
-        public IEnumerable<EtudiantBO> Find(Func<EtudiantBO, bool> predicate)
+        public IEnumerable<Etudiant> Find(Func<Etudiant, bool> predicate)
         {
-            return new List<EtudiantBO>(etudiants.Where(predicate).ToArray());
+            return new List<Etudiant>(etudiants.Where(predicate).ToArray());
         }
     }
 }
