@@ -10,7 +10,7 @@ using CC01.BO;
 
 namespace CC01.DAL
 {
-    public class EtudiantDAL
+    public class EtudiantDAO
     {
         private static List<Etudiant> etudiants;
 
@@ -20,7 +20,7 @@ namespace CC01.DAL
 
         private FileInfo file; 
 
-        public EtudiantDAL(string dbFolder)
+        public EtudiantDAO(string dbFolder)
         {
             this.dbFolder = dbFolder;
             file = new FileInfo(Path.Combine(this.dbFolder, FILE_NAME));

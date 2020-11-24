@@ -91,9 +91,9 @@ namespace CC01.WinForms
                 EtudiantBLO etudiantBLO = new EtudiantBLO(ConfigurationManager.AppSettings["DbFolder"]);
 
                 if (this.oldEtudiant == null)
-                    EtudiantBLO.CreateEtudiant(newetudiant);
+                    etudiantBLO.CreateEtudiant(newetudiant);
                 else
-                    EtudiantBLO.EditEtudiant(oldEtudiant, newetudiant);
+                    etudiantBLO.EditEtudiant(oldEtudiant, newetudiant);
 
                 MessageBox.Show
                 (

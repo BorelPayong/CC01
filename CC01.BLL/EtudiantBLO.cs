@@ -10,11 +10,11 @@ namespace CC01.BLL
 {
     public class EtudiantBLO
     {
-        EtudiantDAL etudiantRepo;
+        EtudiantDAO etudiantRepo;
 
         public EtudiantBLO(string dbFolder)
         {
-            etudiantRepo = new EtudiantDAL(dbFolder);
+            etudiantRepo = new EtudiantDAO(dbFolder);
         }
 
         public void CreateEtudiant(BO.Etudiant etudiantBO)
@@ -37,14 +37,14 @@ namespace CC01.BLL
             return etudiantRepo.Find(x => x.Identifiant == identifiant);
         }
 
-        public IEnumerable<EtudiantBLO> GetBy(Func<EtudiantBLO, bool> predicate)
+        public IEnumerable<Etudiant> GetBy(Func<Etudiant, bool> predicate)
         {
             return etudiantRepo.Find(predicate);
         }
 
-        public void EditEtudiant(EtudiantBLO oldetudiant, EtudiantBLO newetudiant)
+        public void EditEtudiant(Etudiant oldEtudiant, Etudiant newEtudiant)
         {
-            etudiantRepo.Set(oldetudiant, newetudiant);
+            etudiantRepo.Set(oldEtudiant, newEtudiant);
         }
 
     }

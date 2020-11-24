@@ -44,8 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EcoleDAL.cs" />
-    <Compile Include="EtudiantDAL.cs" />
+    <Compile Include="EcoleDAO.cs" />
+    <Compile Include="EtudiantDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
