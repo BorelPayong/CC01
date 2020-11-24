@@ -8,10 +8,10 @@ namespace CC01.DAL
 {
     public class EcoleDAO
     {
-        public static List<Ecole> ecoles;
+        //public static List<Ecole> ecoles;
 
         private const string FILE_NAME = @"ecole.json";
 
-        private readonly string dbFolder
+        private readonly string dbFolder;
     }
 }

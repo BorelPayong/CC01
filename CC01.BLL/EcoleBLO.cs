@@ -8,6 +8,6 @@ namespace CC01.BLL
 {
     public class EcoleBLO
     {
-        EcoleDAO ecolerepo;
+        //EcoleDAO ecolerepo;
     }
 }

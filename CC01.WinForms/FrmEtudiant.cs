@@ -20,10 +20,13 @@ namespace CC01.WinForms
     {
         private Action callBack;
         private Etudiant oldEtudiant;
+        private EtudiantBLO etudiantBLO;
 
         public FrmEtudiant()
         {
             InitializeComponent();
+            dataGridView1.AutoGenerateColumns = false;
+            etudiantBLO = new EtudiantBLO(ConfigurationManager.AppSettings["DbFolder"]);
         }
 
         public FrmEtudiant(Action callBack):this()
@@ -43,6 +46,21 @@ namespace CC01.WinForms
             if (etudiant.Picture != null)
                 pictureBox1.Image = Image.FromStream(new MemoryStream(etudiant.Picture));
         }
+
+        /*private void loaddata()
+        {
+            string value = textBoxSearch.Text.ToLower();
+            var etudiant = etudiantBLO.GetBy
+                (
+                    x =>
+                    x.Identifiant.ToLower().Contains(value) ||
+                    x.Lastname.ToLower().Contains(value)
+                ).OrderBy(x => x.Identifiant).ToArray();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = etudiant;
+            lblRowCount.Text = $"{dataGridView1.RowCount} rows";
+            dataGridView1.ClearSelection();
+        }*/
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -130,7 +148,7 @@ namespace CC01.WinForms
                );
             }
 
-            catch (DuplicateNameException ex)
+            /*catch (DuplicateNameException ex)
             {
                 MessageBox.Show
                (
@@ -161,8 +179,8 @@ namespace CC01.WinForms
                    "Erreur",
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Error
-               );
-            }
+               );*/
+
         }
 
         private void checkForm()
@@ -193,6 +211,11 @@ namespace CC01.WinForms
             {
                 pictureBox1.ImageLocation = ofd.FileName;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
